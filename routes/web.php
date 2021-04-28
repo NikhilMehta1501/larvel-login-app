@@ -15,7 +15,7 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('login');
 });
 
 Route::post('save', [MainController::class, 'save'])->name('save');
